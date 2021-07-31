@@ -4,6 +4,6 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 def lambda_handler(event, context):
-    response = requests.get('https://jsonplaceholder.typicode.com/posts')
+    response = requests.get('https://www.usfbullrunner.com/Route/13928/')
     posts = json.loads(response.text) #load data into a dict of objects, posts
     print(posts)
