@@ -1,12 +1,11 @@
 import json
 
-print('Weekend function')
+print('Make input text lowercase function')
 
 
 def lambda_handler(event, context):
     #print("Received event: " + json.dumps(event, indent=2))
-    print("First = " + event['key1'])
-    print("Second = " + event['key2'])
-    print("Third = " + event['key3'])
+    print("Lowercase text = " + event['key1'].lower())
+
     return event['key1']  # Echo back the first key value
     #raise Exception('Something went wrong')
