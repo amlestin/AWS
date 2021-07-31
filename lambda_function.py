@@ -1,11 +1,9 @@
 import json
-
-print('Make input text lowercase function')
-
-
+from botocore.vendored import requests
+import logging
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
 def lambda_handler(event, context):
-    #print("Received event: " + json.dumps(event, indent=2))
-    print("Lowercase text = " + event['key1'].lower())
-
-    return event['key1']  # Echo back the first key value
-    #raise Exception('Something went wrong')
+    response = requests.get('https://jsonplaceholder.typicode.com/posts')
+    posts = json.loads(response.text) #load data into a dict of objects, posts
+    print(posts)
