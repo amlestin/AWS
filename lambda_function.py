@@ -6,7 +6,8 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 def lambda_handler(event, context):
-    response = requests.get('https://www.usfbullrunner.com/Route/13928/')
+    route = int(event)
+    response = requests.get(F'https://www.usfbullrunner.com/Route/{route}/')
 
     posts = json.loads(response.text)
-    print(posts)
+    return posts
