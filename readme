@@ -1,4 +1,7 @@
 This repo will hold my experiments with AWS.
 
-TODO:
+IN-PROGRESS:
 + Add Simple Queue Service to send inputs with backpressure
+
+TODO:
+Custom domain for API
