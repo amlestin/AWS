@@ -1,7 +1,11 @@
 This repo will hold my experiments with AWS.
 
 IN-PROGRESS:
-+ Add Simple Queue Service to send inputs with backpressure
++ Host personal site on AWS and connect domain from Route53
 
 TODO:
-Custom domain for API
++ Find data for personal API
+
+DONE:
++ Custom domain for API
++ Add Simple Queue Service to send inputs with backpressure
